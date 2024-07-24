@@ -25,6 +25,8 @@ function setProgress(value) {
     progressBar.style.width = value + '%';
     progressBar.innerHTML ="<p>HTML</p>";
 }
+setProgress(90);
+
 
 
 
@@ -34,6 +36,8 @@ function setProgress1(value) {
     progressBar1.style.width = value + '%';
     progressBar1.innerHTML ="<p>CSS</p>";
 }
+setProgress1(80);
+
 
 
 function setProgress2(value) {
@@ -316,6 +320,9 @@ document.querySelectorAll(".sidenav-container .navs a").forEach(link => {
         });
     });
 });
+function linkedin(){
+    window.location.href = "https://www.linkedin.com/in/mohamed-amjad-a-111b44281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+}
 
 
 
