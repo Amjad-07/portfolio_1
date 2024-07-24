@@ -1,0 +1,1499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color:black;
+  
+    color: white;
+    overflow-x: hidden;
+    width: 100vw;
+}
+/* -----------------------------------------------navbar----------------------------- */
+.nav-container{
+
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color:rgb(50, 46, 46);
+    margin-left: -100px;
+    margin-right: -100px;
+    z-index: 20;
+    padding: 10px;
+
+    
+
+}
+.nav-el-con{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.navs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.navs a{
+    text-decoration: none;
+    color: white;
+}
+.nav-text{
+    color: orangered;
+}
+.nav-text h1{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.navs a:hover{
+    color: orangered;
+    transition-duration: 1s;
+}
+.nav1{
+    display: none;
+}
+/* ---------------------------------sidenav--------------------------- */
+.sidenav-container{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-left: -60%;
+    transition: 1s;
+  
+}
+.nav-el-con1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 70px;
+}
+.nav-close{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+/* --------------------------------------------------------------home--------------------------------- */
+.home-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+
+}
+
+.home-text{
+    width: 600px;
+}
+.home-image{
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+.home-image img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 5px;
+    border: 3px solid orangered;
+    transition: transform 0.3s ease;
+
+}
+.home-image img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    
+
+    
+
+}
+.home-text b{
+    font-size: 20px;
+}
+
+.span1{
+    color: orangered;
+    font-size: 40px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.span2{
+    font-size: 20px;
+
+}
+.span3{
+    color: orangered;
+    font-size: 30px;
+    position: relative;
+    
+    
+}
+.span3::before{
+    content: '';
+
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    
+    position: absolute;
+    animation: animate 4s  infinite;
+    border-left: 2px solid orangered;
+
+    
+}
+@keyframes animate{
+    50%{
+        left: calc(100% + 4px);
+    }    
+    100%{
+        left: calc(0%);
+    }
+}
+.home-text p{
+    margin-top:20px ;
+    font-weight: 500;
+}
+.home-text button{
+    margin-top: 20px;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid orangered;
+
+}
+.home-text button:hover{
+    color: orangered;
+    background-color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+.home-logo{
+    margin-top: 30px;
+}
+.home-logo i{
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.home-logo a{
+    text-decoration: none;
+    color: white;
+}
+.home-logo a:hover{
+    color: orangered;
+    transition: 1s;
+}
+    
+
+/* --------------------------------------------------------About---------------------------- */
+/* Container for the progress bar */
+.progress-container {
+    width: 30%;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 3px 3px -5px #000000, 0 2px 5px #aaaaaa;
+}
+.passion{
+    width: 1000px;
+}
+/* The progress bar itself */
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color:orangered;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.25s;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+.about-bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+.bio1 p{
+    margin-top: 20px;
+    border-bottom: 2px solid rgb(57, 53, 52);
+}
+.skill-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.images img{
+    width: 5vw;
+    height: 10vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 30px;
+}
+.about-text b{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    border-bottom: 4px solid orangered;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.web{
+    color: orangered;
+    font-size: 30px;
+    border-bottom: 2px solid orangered;
+
+}
+.about-text .iam{
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+.about-text p{
+    margin-top: 30px;
+    font-weight: 500;
+}
+/* ----------------------------------------------------------education---------------------------- */
+
+.college{
+    width: 400px;
+   
+}
+.education{
+    margin-top: 100px;
+
+    
+}
+.edu-text .edu-bold{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    border-bottom: 4px solid orangered;
+
+
+}
+li{
+    padding: 10px;
+}
+.edu-text1{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.edu-text1 b{
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 4px solid orangered;
+}
+.edu-text{
+    display: flex;
+    justify-content: space-around;
+}
+.edu-text h2{
+    margin-top: 20px;
+}
+.edu-text p{
+    margin: 20px;
+    font-weight: 500;
+}
+.experiance b{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    border-bottom: 4px solid orangered;
+
+
+}
+.experiance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.experiance p{
+    margin: 20px;
+    font-weight: 500;
+
+}
+.port-images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    height: 100%;
+    width: 100%;
+    margin-left: 40px;
+    
+}
+.port-image{
+    flex: 1 0 30%;
+    position: relative;
+
+}
+.port-img{
+    width: 20vw;
+    border-radius: 5px;
+    position: relative;
+    
+
+}
+
+
+.port-image .overlay:hover{
+    opacity: 1;
+    transition: 1s;
+    padding: 10px;
+}
+
+.overlay{
+    position: absolute;
+    width: 20vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+}
+.portfolio-text b{
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 4px solid orangered;
+
+}
+.portfolio-text{
+    margin-top: 100px;
+}
+.portfolio-projects{
+    margin-top: 50px;
+    margin-left: 50px;
+    
+    
+}
+.portfolio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* -----------------------------------------------conduct------------------------------- */
+.conduct-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.conduct-text b{
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: 4px solid orangered;
+    
+}
+.information{
+    margin-top: 50px;
+}
+.information i{
+    margin-top: 30px;
+}
+.inform-logo{
+    margin-top: 50px;
+}
+.inform-logo i{
+    font-size: 40px;
+    margin: 20px;
+}
+.inform-logo a{
+    text-decoration: none;
+    color: white;
+}
+.inform-logo a:hover{
+    color: orangered;
+    transition: 1s;
+}
+/* -------------------------------------------------------footer---------------------------- */
+.footer-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(50, 46, 46);
+
+    margin-left: -100px;
+    margin-right: -100px;
+    padding: 10px;
+}
+.footer-container p{
+    margin-top: 10px;
+}
+/* -------------------------------------------animation------------------------- */
+.animation1 {
+    transition: 1s;
+}
+
+.reveal-element {
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(5px);
+
+}
+.animation6 {
+    transition: 1s;
+}
+.reveal-element6 {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+
+}
+.animation2 {
+    transition: 1s;
+}
+.reveal-element1 {
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(5px);
+
+}
+.animation3 {
+    transition: 1s;
+}
+.reveal-element3 {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+
+}
+.animation4 {
+    transition: 1s;
+}
+.reveal-element4 {
+    opacity: 0;
+    transform: translateX(100%);
+    filter: blur(5px);
+
+}
+/* .displayShow{
+    display: block;
+    animation: fade 1.5s;
+} */
+ /* -----------------------------------------------responsive--------------------------- */
+ @media screen   and (max-width:600px){
+    body,html{
+        background-color:black;
+      
+        color: white;
+        overflow-x: hidden;
+        width: 100vw;
+        font-size: 10px;
+        
+    }
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    #bar{
+        font-size: 15px;
+    }
+    .nav1{
+        display: block;
+    }
+    /* -----------------------------------------------navbar----------------------------- */
+    
+    .nav-container{
+        display: flex;
+        justify-content:space-around ;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color:rgb(50, 46, 46);
+        z-index: 20;
+        padding: 10px;
+    
+        
+    
+    }
+    .nav-el-con{
+        display: none;
+    }
+    .navs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .navs a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav-text{
+        color: orangered;
+    }
+    .nav-text h1{
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    .navs a:hover{
+        color: orangered;
+        transition-duration: 1s;
+    }
+    /* --------------------------------------------------------------home--------------------------------- */
+    .home-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        gap: 30px;
+        
+    
+    }
+    
+    .home-text{
+        width: 600px;
+        text-align: center;
+    }
+    .home-image{
+        overflow: hidden;
+        border-radius: 50%;
+        
+    }
+    .home-image img{
+        width: 40vw;
+        height: 40vw;
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 5px;
+        border: 3px solid orangered;
+        transition: transform 0.3s ease;
+    
+    }
+    .home-image img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        
+    
+        
+    
+    }
+    .span-width{
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .home-text b{
+        font-size: 10px;
+    }
+    
+    .span1{
+        color: orangered;
+        font-size: 20px;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    .span2{
+        font-size: 13px;
+    
+    }
+    .span3{
+        margin-top: 10px;
+        color: orangered;
+        font-size: 15px;
+        position: relative;
+        
+        
+    }
+    .span3::before{
+        content: '';
+    
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        
+        position: absolute;
+        animation: animate 4s  infinite;
+        border-left: 2px solid orangered;
+    
+        
+    }
+    @keyframes animate{
+        50%{
+            left: calc(100% + 4px);
+        }    
+        100%{
+            left: calc(0%);
+        }
+    }
+    .home-text p{
+        margin-top:20px ;
+        font-weight: 500;
+        width: 300px;
+        margin-left: 150px;
+    }
+    .home-text button{
+        margin-top: 20px;
+        background-color: orangered;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid orangered;
+    
+    }
+    .home-text button:hover{
+        color: orangered;
+        background-color: white;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .home-logo{
+        margin-top: 30px;
+    }
+    .home-logo i{
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .home-logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .home-logo a:hover{
+        color: orangered;
+        transition: 1s;
+    }
+        
+    
+    /* --------------------------------------------------------About---------------------------- */
+    /* Container for the progress bar */
+    .progress-container {
+        width: 30%;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 3px 3px -5px #000000, 0 2px 5px #aaaaaa;
+    }
+    .passion{
+        width: 1000px;
+    }
+    /* The progress bar itself */
+    .progress-bar {
+        width: 0;
+        height: 20px;
+        background-color:orangered;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        border-radius: 5px 0 0 5px;
+        transition: width 0.25s;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+    }
+    .about-bio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+        margin: 20px;
+    }
+    .bio1 p{
+        margin-top: 20px;
+        border-bottom: 2px solid rgb(57, 53, 52);
+    }
+    .skill-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .images img{
+        width: 15vw;
+        height: 10vh;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 30px;
+    }
+    .about-text b{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 100px;
+        border-bottom: 4px solid orangered;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .web{
+        color: orangered;
+        font-size: 15px;
+        border-bottom: 2px solid orangered;
+    
+    }
+    .about-text .iam{
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .skill-text h2{
+        font-size: 25px;
+    }
+    
+    
+    .about-text p{
+        margin-top: 15px;
+        font-weight: 500;
+    }
+    .passion{
+        width: 300px;
+    }
+    /* ----------------------------------------------------------education---------------------------- */
+    
+    .college{
+        text-align: center;
+       
+    }
+    .school{
+        text-align: center;
+    }
+    .education{
+        margin-top: 50px;
+    
+        
+    }
+    .edu-text .edu-bold{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 100px;
+        border-bottom: 4px solid orangered;
+    
+    
+    }
+    li{
+        padding: 10px;
+    }
+    .edu-text1{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    
+    }
+    .edu-text1 b{
+        font-size: 25px;
+        font-weight: 600;
+        border-bottom: 4px solid orangered;
+    }
+    .edu-text{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .edu-text h2{
+        margin-top: 10px;
+    }
+    .edu-text p{
+        margin: 20px;
+        font-weight: 500;
+    }
+    /* .experiance b{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 100px;
+        border-bottom: 4px solid orangered;
+    
+    
+    }
+    .experiance{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experiance p{
+        margin: 20px;
+        font-weight: 500;
+    
+    } */
+    .port-images{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 15px;
+        height: 100%;
+        width: 100%;
+        margin-left: -20px;
+        
+    }
+    .port-image{
+        flex: 1 0 20%;
+        position: relative;
+    
+    }
+    .port-img{
+        width: 30vw;
+        border-radius: 5px;
+        position: relative;
+        
+    
+    }
+    
+    
+    .port-image .overlay:hover{
+        opacity: 1;
+        transition: 1s;
+        padding: 10px;
+    }
+    
+    .overlay{
+        position: absolute;
+        width: 30vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white;
+        font-size: 24px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    
+    }
+    .portfolio-text b{
+        font-size: 25px;
+        font-weight: 600;
+        border-bottom: 4px solid orangered;
+    
+    }
+    .portfolio-text{
+        margin-top: 50px;
+    }
+    .portfolio-projects{
+        margin-top: 50px;
+        margin-left: 80px;
+        
+        
+    }
+    .portfolio-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* -----------------------------------------------conduct------------------------------- */
+    .conduct-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .conduct-text b{
+        font-size: 25px;
+        font-weight: 600;
+        border-bottom: 4px solid orangered;
+        
+    }
+    .information{
+        margin: 25px;
+    }
+    .information i{
+        margin-top: 15px;
+    }
+    .inform-logo{
+        margin-top: 25px;
+    }
+    .inform-logo i{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .inform-logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .inform-logo a:hover{
+        color: orangered;
+        transition: 1s;
+    }
+    /* -------------------------------------------------------footer---------------------------- */
+    .footer-container{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgb(50, 46, 46);
+    
+        padding: 10px;
+    }
+    .footer-container p{
+        margin-top: 10px;
+    }
+    
+
+    
+ }
+ @media screen   and (max-width:400px){
+    body,html{
+        background-color:black;
+      
+        color: white;
+        overflow-x: hidden;
+        width: 100vw;
+        font-size: 10px;
+        
+    }
+    
+    
+    #bar{
+        font-size: 15px;
+    }
+    /* -----------------------------------------------navbar----------------------------- */
+    .nav-container{
+        display: flex;
+        justify-content:space-around ;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color:rgb(50, 46, 46);
+        z-index: 20;
+        padding: 10px;
+    
+        
+    
+    }
+    .nav-el-con{
+        display: none;
+    }
+    .navs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+    .navs a{
+        text-decoration: none;
+        color: white;
+    }
+    .nav-text{
+        color: orangered;
+    }
+    .nav-text h1{
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    .navs a:hover{
+        color: orangered;
+        transition-duration: 1s;
+    }
+    /* --------------------------------------------------------------home--------------------------------- */
+    .home-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        gap: 30px;
+        
+    
+    }
+    
+    .home-text{
+        width: 600px;
+        text-align: center;
+    }
+    .home-image{
+        overflow: hidden;
+        border-radius: 50%;
+        
+    }
+    .home-image img{
+        width: 40vw;
+        height: 40vw;
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 5px;
+        border: 3px solid orangered;
+        transition: transform 0.3s ease;
+    
+    }
+    .home-image img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+        
+    
+        
+    
+    }
+    .home-text b{
+        font-size: 10px;
+    }
+    
+    .span1{
+        color: orangered;
+        font-size: 20px;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    .span2{
+        font-size: 10px;
+    
+    }
+    .span3{
+        color: orangered;
+        font-size: 15px;
+        position: relative;
+        
+        
+    }
+    .span3::before{
+        content: '';
+    
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        
+        position: absolute;
+        animation: animate 4s  infinite;
+        border-left: 2px solid orangered;
+    
+        
+    }
+    @keyframes animate{
+        50%{
+            left: calc(100% + 4px);
+        }    
+        100%{
+            left: calc(0%);
+        }
+    }
+    .home-text p{
+        margin-top:20px ;
+        font-weight: 500;
+        width: 300px;
+        margin-left: 150px;
+    }
+    .home-text button{
+        margin-top: 20px;
+        background-color: orangered;
+        color: white;
+        padding: 10px;
+        border-radius: 20px;
+        border: 1px solid orangered;
+    
+    }
+    .home-text button:hover{
+        color: orangered;
+        background-color: white;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .home-logo{
+        margin-top: 30px;
+    }
+    .home-logo i{
+        font-size: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .home-logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .home-logo a:hover{
+        color: orangered;
+        transition: 1s;
+    }
+        
+    
+    /* --------------------------------------------------------About---------------------------- */
+    /* Container for the progress bar */
+    .progress-container {
+        width: 30%;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 3px 3px -5px #000000, 0 2px 5px #aaaaaa;
+    }
+    .passion{
+        width: 1000px;
+    }
+    /* The progress bar itself */
+    .progress-bar {
+        width: 0;
+        height: 20px;
+        background-color:orangered;
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        border-radius: 5px 0 0 5px;
+        transition: width 0.25s;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .about-bio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+        margin: 20px;
+    }
+    .bio1 p{
+        margin-top: 20px;
+        border-bottom: 2px solid rgb(57, 53, 52);
+    }
+    .skill-logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .images img{
+        width: 15vw;
+        height: 10vh;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 30px;
+    }
+    .about-text b{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 100px;
+        border-bottom: 4px solid orangered;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .web{
+        color: orangered;
+        font-size: 15px;
+        border-bottom: 2px solid orangered;
+    
+    }
+    .about-text .iam{
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .skill-text h2{
+        font-size: 25px;
+    }
+    
+    
+    .about-text p{
+        margin-top: 15px;
+        font-weight: 500;
+    }
+    .passion{
+        width: 300px;
+    }
+    /* ----------------------------------------------------------education---------------------------- */
+    
+    .college{
+        width: 350px;
+        text-align: center;
+       
+    }
+    .school{
+        text-align: center;
+    }
+    .education{
+        margin-top: 50px;
+    
+        
+    }
+    .edu-text .edu-bold{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 100px;
+        border-bottom: 4px solid orangered;
+    
+    
+    }
+    li{
+        padding: 10px;
+    }
+    .edu-text1{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    
+    }
+    .edu-text1 b{
+        font-size: 25px;
+        font-weight: 600;
+        border-bottom: 4px solid orangered;
+    }
+    .edu-text{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .edu-text h2{
+        margin-top: 10px;
+    }
+    .edu-text p{
+        margin: 20px;
+        font-weight: 500;
+    }
+    /* .experiance b{
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 100px;
+        border-bottom: 4px solid orangered;
+    
+    
+    }
+    .experiance{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .experiance p{
+        margin: 20px;
+        font-weight: 500;
+    
+    } */
+    .port-images{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 15px;
+        height: 100%;
+        width: 100%;
+        margin-left: -20px;
+        
+    }
+    .port-image{
+        flex: 1 0 20%;
+        position: relative;
+    
+    }
+    .port-img{
+        width: 30vw;
+        border-radius: 5px;
+        position: relative;
+        
+    
+    }
+    
+    
+    .port-image .overlay:hover{
+        opacity: 1;
+        transition: 1s;
+        padding: 10px;
+    }
+    
+    .overlay{
+        position: absolute;
+        width: 30vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); 
+        color: white;
+        font-size: 24px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    
+    }
+    .portfolio-text b{
+        font-size: 25px;
+        font-weight: 600;
+        border-bottom: 4px solid orangered;
+    
+    }
+    .portfolio-text{
+        margin-top: 50px;
+    }
+    .portfolio-projects{
+        margin-top: 50px;
+        margin-left: 50px;
+        
+        
+    }
+    .portfolio-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* -----------------------------------------------conduct------------------------------- */
+    .conduct-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .conduct-text b{
+        font-size: 25px;
+        font-weight: 600;
+        border-bottom: 4px solid orangered;
+        
+    }
+    .information{
+        margin: 25px;
+    }
+    .information i{
+        margin-top: 15px;
+    }
+    .inform-logo{
+        margin-top: 25px;
+    }
+    .inform-logo i{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .inform-logo a{
+        text-decoration: none;
+        color: white;
+    }
+    .inform-logo a:hover{
+        color: orangered;
+        transition: 1s;
+    }
+    /* -------------------------------------------------------footer---------------------------- */
+    .footer-container{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgb(50, 46, 46);
+    
+        padding: 10px;
+    }
+    .footer-container p{
+        margin-top: 10px;
+    }
+    
+
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
