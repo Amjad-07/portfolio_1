@@ -9,7 +9,7 @@ function textload() {
 
     }, 0);
     setTimeout(() => {
-        two.textContent = ("Web developer")
+        two.textContent = ("Front-end Developer")
 
 
     }, 4000);
@@ -65,6 +65,14 @@ function setProgress4(value) {
 }
 
 setProgress4(70);
+
+function setProgress5(value) {
+    const progressBar3 = document.getElementById('progress-bar5');
+    progressBar3.style.width = value + '%';
+    progressBar3.innerHTML ="<p>React</p>";
+}
+setProgress5(70);
+
 
 
 

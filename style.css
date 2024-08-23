@@ -552,45 +552,47 @@ li{
     }
     /* -----------------------------------------------navbar----------------------------- */
     
-    .nav-container{
+    .nav-container {
         display: flex;
-        justify-content:space-around ;
+        justify-content: space-around;
         align-items: center;
         position: sticky;
         top: 0;
-        background-color:rgb(50, 46, 46);
+        background-color: rgb(50, 46, 46);
         z-index: 20;
         padding: 10px;
-    
-        
-    
     }
-    .nav-el-con{
+    
+    .nav-el-con {
         display: none;
     }
-    .navs{
+    
+    .navs {
         display: flex;
         justify-content: center;
         align-items: center;
-      
     }
-    .navs a{
+    
+    .navs a {
         text-decoration: none;
         color: white;
     }
-    .nav-text{
+    
+    .nav-text {
         color: orangered;
     }
-    .nav-text h1{
+    
+    .nav-text h1 {
         font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
-        font-weight: weight;
+        font-weight: normal;
         font-style: normal;
     }
-    .navs a:hover{
+    
+    .navs a:hover {
         color: orangered;
         transition-duration: 1s;
     }
+    
     /* --------------------------------------------------------------home--------------------------------- */
     .home-container{
         display: flex;
